@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Project #1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuraOneAndOnly/qa-auto-engineer-javascript-project-44.git"
+  },
+  "author": "YuraOneAndOnly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuraOneAndOnly/qa-auto-engineer-javascript-project-44/issues"
+  },
+  "homepage": "https://github.com/YuraOneAndOnly/qa-auto-engineer-javascript-project-44#readme"
+}
