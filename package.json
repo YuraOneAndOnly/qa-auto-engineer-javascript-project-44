@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-  "brain-games": "bin/brain-games.js"
-},
+    "brain-games": "bin/brain-games.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YuraOneAndOnly/qa-auto-engineer-javascript-project-44.git"
