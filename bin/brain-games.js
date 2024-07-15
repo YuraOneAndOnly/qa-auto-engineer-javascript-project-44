@@ -3,4 +3,6 @@
 import askForName from "../src/cli.js";
 
 console.log("Welcome to the Brain Games!");
-askForName();
+const name = askForName();
+
+export default name;
