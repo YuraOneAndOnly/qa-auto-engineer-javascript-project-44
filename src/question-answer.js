@@ -15,7 +15,7 @@ export default (question, expectedAnswer) => {
       result = false;
     }
   } else if (typeof expectedAnswer === "number") {
-    if (expectedAnswer === realAnswer) {
+    if (expectedAnswer.toString() === realAnswer.toString()) {
         console.log("Correct!");
         result = true;
       } else {
