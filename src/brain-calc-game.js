@@ -9,6 +9,7 @@ export default (name) => {
   let result = false;
   let isBreaked = false;
 
+  console.log("What is the result of the expression?")
   for (let i = 1; i <= 3; i += 1) {
     questionType = Math.floor(Math.random() * 3);
     switch (questionType) {
