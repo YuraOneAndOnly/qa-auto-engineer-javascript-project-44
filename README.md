@@ -6,3 +6,5 @@
 Link to "brain-even" (step 5) asciinema: https://asciinema.org/a/EpUuan8zlAIY2dOOOFiX2YPmF
 
 Link to "brain-calc" (step 6) asciinema: https://asciinema.org/a/3ARMdDSVraqaL5hW7QqA5jJpD
+
+Link to "brain-gcd" (step 7) asciinema: https://asciinema.org/a/iNyBjayoO5llDDh24BNOO6IUq
