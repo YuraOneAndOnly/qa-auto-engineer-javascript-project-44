@@ -24,6 +24,6 @@ export default (name) => {
   if (isBreaked) {
     console.log(`Let's try again, ${name}!`);
   } else {
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
   }
 }
