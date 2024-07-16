@@ -1,14 +1,15 @@
 import askQuestion from "./question-answer.js";
 
 export default (name) => {
-  let questionNumber = 0;
-  let expectedAnswer = ``;
-  let result = false;
-  let isBreaked = false;
+  let questionNumber = 0; // число для вопроса
+  let expectedAnswer = ``; // ожидаемый ответ
+  let result = false; // результат ответа
+  let isBreaked = false; // условие завершения цикла
+  const maxNumber = 1000; // максимальное возможное значение чисел в вопросе
 
   console.log('Answer "Yes" if the number is even, otherwise answer "No".');
   for (let i = 1; i <= 3; i += 1) {
-    questionNumber = Math.floor(Math.random() * 1000);
+    questionNumber = Math.floor(Math.random() * maxNumber);
     if (questionNumber % 2 === 0) {
       expectedAnswer = "yes";
     } else {
