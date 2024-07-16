@@ -15,10 +15,10 @@ export default (name) => {
   for (let i = 1; i <= 3; i += 1) {
     expectedAnswer = Math.floor(Math.random() * maxNumber);
     commonDifference = Math.floor(Math.random() * Math.floor(maxNumber / 10));
-    leftNumbersAmount = Math.floor(Math.random() * Math.floor(maxNumber / 100));
-    RightNumbersAmount = Math.floor(
-      Math.random() * Math.floor(maxNumber / 100)
-    );
+    leftNumbersAmount =
+      Math.floor(Math.random() * Math.floor(maxNumber / 100)) + 2; // сдвиг рандомного количества чисел слева на +2 от нуля, так как нужно минимум 5 элементов в строке
+    RightNumbersAmount =
+      Math.floor(Math.random() * Math.floor(maxNumber / 100)) + 2; // сдвиг рандомного количества чисел справа на +2 от нуля, так как нужно минимум 5 элементов в строке
     question = `..`;
     tempNumber = expectedAnswer;
     for (let j = 1; j <= leftNumbersAmount; j += 1) {
