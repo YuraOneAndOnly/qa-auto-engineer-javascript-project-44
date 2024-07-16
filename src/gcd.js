@@ -1,11 +1,12 @@
 export default (firstNumber, secondNumber) => {
-  let remainder = 1;
-  let divident = firstNumber;
-  let divider = secondNumber;
+  let remainder = 1; // остаток
+  let divident = firstNumber; // делимое
+  let divider = secondNumber; // делитель
   while (remainder !== 0) {
-    remainder = divident % divider;
-    divident = divider;
-    divider = remainder;
+    // пока остаток от делимого не будет равен 0
+    remainder = divident % divider; // вычисление остатка
+    divident = divider; // делимое принимает значение делителем
+    divider = remainder; // делитель принимает значение остатка
   }
   return divident;
 };
