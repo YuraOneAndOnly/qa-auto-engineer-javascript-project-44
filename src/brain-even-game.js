@@ -2,7 +2,7 @@ import askQuestion from './question-answer.js';
 
 export default (name) => {
   let questionNumber = 0; // число для вопроса
-  let expectedAnswer = ``; // ожидаемый ответ
+  let expectedAnswer = ''; // ожидаемый ответ
   let result = false; // результат ответа
   let isBreaked = false; // условие завершения цикла
   const maxNumber = 1000; // максимальное возможное значение чисел в вопросе
