@@ -7,16 +7,18 @@ export default (isPrimeNeeded) => {
     let rightNumber = Math.ceil(Math.random() * (maxNumber - 1)) + 1;
     // сдвиг рандома на +2 вправо, чтобы не попадали 0 и 1
     if (rightNumber === 2) {
-      return 2;
+      result = 2;
+      rightNumber = result; // чтобы пропустить for
     } // возвращаем сразу простое 2 для упрощения алгоритма
     if (rightNumber % 2 === 0) {
       // исключение всех четных чисел, так как они всегда делятся на 2
       rightNumber -= 1;
     }
     if (rightNumber === 3) {
-      return 3;
+      result = 3;
+      rightNumber = result; // чтобы пропустить for
     } // возвращаем сразу простое 3 для упрощения алгоритма
-    for (let i = rightNumber - 2; i >= 3; i -= 2) {
+    for (let i = rightNumber; i >= 3; i -= 2) {
       // деления числа на себя исключено путем вычитания 2 изначально,
       // деление числа на 1 исключено 3 в условии остановки цикла
       let counter = 0; // счетчик успешных операций деления
@@ -33,12 +35,13 @@ export default (isPrimeNeeded) => {
       }
     }
   } else {
-    const rightNumber = Math.floor(Math.random() * maxNumber);
+    let rightNumber = Math.floor(Math.random() * maxNumber);
     if (rightNumber === 1 || rightNumber === 0) {
-      return rightNumber;
+      result = rightNumber;
     }
     if (rightNumber === 3 || rightNumber === 2) {
-      return 1;
+      result = 1;
+      rightNumber = result; // чтобы пропустить for
     }
     for (let i = rightNumber; i >= 1; i -= 1) {
       // деления числа на себя исключено путем вычитания 1 изначально,
