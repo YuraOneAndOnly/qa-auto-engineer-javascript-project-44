@@ -1,7 +1,7 @@
 import readlineSync from "readline-sync";
 
 export default (question, expectedAnswer) => {
-  let result = false;
+  let result = false; // переменная - результат для возврата
   console.log(`Question: ${question}`);
   const realAnswer = readlineSync.question("Your answer: ");
   if (typeof expectedAnswer === "string") {
