@@ -5,7 +5,7 @@
 
 To install, please, clone repository with 'git clone' and run 'make install' inside.
 
-To run a game, just promt it's name in a terminal. 
+To run a game, just prompt its name in a terminal.
 
 List of games:
   1. brain-even - Try to figure out if the number is even or not
@@ -14,7 +14,7 @@ List of games:
   4. brain-progression - Try to complete the progression with the missing number.
   5. brain-prime - Try to figure out if a number is prime or not.
 
-Each game has 3 round. If ypu complete all of them - congratulations, you win! If you not - just try again ;)
+Each game has 3 round. If you successfully complete all of them - congratulations, you win! If you not - just try again ;)
 
 Link to "brain-even" asciinema: [https://asciinema.org/a/mExeuUzlCP2LaGy1LSHYy8HIY](https://asciinema.org/a/mExeuUzlCP2LaGy1LSHYy8HIY)
 
