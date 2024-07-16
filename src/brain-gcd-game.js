@@ -12,8 +12,8 @@ export default (name) => {
 
   console.log("Find the greatest common divisor of given numbers.");
   for (let i = 1; i <= 3; i += 1) {
-    questionFirstNumber = Math.floor(Math.random() * maxNumber);
-    questionSecondNumber = Math.floor(Math.random() * maxNumber);
+    questionFirstNumber = Math.ceil(Math.random() * maxNumber);
+    questionSecondNumber = Math.ceil(Math.random() * maxNumber);
     expectedAnswer = gcd(questionFirstNumber, questionSecondNumber);
     question = `${questionFirstNumber} ${questionSecondNumber}`;
     result = askQuestion(question, expectedAnswer);
