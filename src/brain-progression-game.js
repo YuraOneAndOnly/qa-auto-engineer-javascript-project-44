@@ -15,7 +15,7 @@ export default (name) => {
   for (let i = 1; i <= 3; i += 1) {
     expectedAnswer = Math.floor(Math.random() * maxNumber);
     commonDifference = Math.floor(Math.random() * Math.floor(maxNumber / 10));
-    leftNumbersAmount = Math.floor(Math.random() * Math.floor(maxNumber / 100)));
+    leftNumbersAmount = Math.floor(Math.random() * Math.floor(maxNumber / 100));
     RightNumbersAmount = Math.floor(Math.random() * Math.floor(maxNumber / 100));
     question = `..`;
     tempNumber = expectedAnswer;
