@@ -7,7 +7,7 @@ export default (name) => {
   let isBreaked = false; // условие завершения цикла
   const maxNumber = 1000; // максимальное возможное значение чисел в вопросе
 
-  console.log('Answer "Yes" if the number is even, otherwise answer "No".');
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 1; i <= 3; i += 1) {
     questionNumber = Math.floor(Math.random() * maxNumber);
     if (questionNumber % 2 === 0) {
