@@ -1,6 +1,8 @@
 export default (isPrimeNeeded) => {
   // если нужно простое число - передавать в функцию true
   const maxNumber = 1000; // максимальное возможное число
+  let result = 0; // переменная для результата
+
   if (isPrimeNeeded === true) {
     let rightNumber = Math.ceil(Math.random() * (maxNumber - 1)) + 1;
     // сдвиг рандома на +2 вправо, чтобы не попадали 0 и 1
@@ -26,7 +28,8 @@ export default (isPrimeNeeded) => {
       if (counter === 0) {
         // если счетчик не увеличился (т.е. число делится на себя и на 1),
         // то число простое и возвращается функцией
-        return i;
+        result = i;
+        break;
       }
     }
   } else {
@@ -49,9 +52,10 @@ export default (isPrimeNeeded) => {
       if (counter > 2) {
         // если счетчик  увеличился (т.е. число делится не только на себя и на 1),
         // то число не простое и возвращается функцией
-        return i;
+        result = i;
+        break;
       }
     }
   }
-  return 1;
+  return result;
 };
