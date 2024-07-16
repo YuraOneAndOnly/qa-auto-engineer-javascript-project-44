@@ -8,7 +8,7 @@ export default (name) => {
   let question = ""; // формируемая строка вопроса
   let result = false; // результат ответа
   let isBreaked = false; // условие завершения цикла
-  const maxNumber = 100; // максимальное возможное значение чисел в вопросе
+  const maxNumber = 1000; // максимальное возможное значение чисел в вопросе
 
   console.log("Find the greatest common divisor of given numbers.");
   for (let i = 1; i <= 3; i += 1) {
