@@ -16,14 +16,14 @@ export default (question, expectedAnswer) => {
     }
   } else if (typeof expectedAnswer === "number") {
     if (expectedAnswer.toString() === realAnswer.toString()) {
-        console.log("Correct!");
-        result = true;
-      } else {
-        console.log(
-          `"${realAnswer}" is wrong answer ;(. Correct answer was "${expectedAnswer}".`
-        );
-        result = false;
-      }
+      console.log("Correct!");
+      result = true;
+    } else {
+      console.log(
+        `"${realAnswer}" is wrong answer ;(. Correct answer was "${expectedAnswer}".`
+      );
+      result = false;
+    }
   }
   return result;
 };

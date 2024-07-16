@@ -5,7 +5,7 @@ export default (name) => {
   let commonDifference = 0; //
   let leftNumbersAmount = 0; // количество чисел, генерируемое слева
   let RightNumbersAmount = 0; // количество чисел, генерируемое справа
-  let tempNumber = ""; // переменная для временного числа, вычисляемого в цикле 
+  let tempNumber = ""; // переменная для временного числа, вычисляемого в цикле
   let question = ""; // формируемая строка вопроса
   let result = false; // результат ответа
   let isBreaked = false; // условие завершения цикла
@@ -16,7 +16,9 @@ export default (name) => {
     expectedAnswer = Math.floor(Math.random() * maxNumber);
     commonDifference = Math.floor(Math.random() * Math.floor(maxNumber / 10));
     leftNumbersAmount = Math.floor(Math.random() * Math.floor(maxNumber / 100));
-    RightNumbersAmount = Math.floor(Math.random() * Math.floor(maxNumber / 100));
+    RightNumbersAmount = Math.floor(
+      Math.random() * Math.floor(maxNumber / 100)
+    );
     question = `..`;
     tempNumber = expectedAnswer;
     for (let j = 1; j <= leftNumbersAmount; j += 1) {

@@ -24,8 +24,12 @@ export default (name) => {
         break;
       }
       case 2: {
-        questionFirstNumber = Math.floor(Math.random() * Math.floor(maxNumber / 10));
-        questionSecondNumber = Math.floor(Math.random() * Math.floor(maxNumber / 10));
+        questionFirstNumber = Math.floor(
+          Math.random() * Math.floor(maxNumber / 10)
+        );
+        questionSecondNumber = Math.floor(
+          Math.random() * Math.floor(maxNumber / 10)
+        );
         question = `${questionFirstNumber} * ${questionSecondNumber}`;
         expectedAnswer = questionFirstNumber * questionSecondNumber;
         break;
