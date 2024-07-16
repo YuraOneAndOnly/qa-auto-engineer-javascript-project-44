@@ -1,5 +1,5 @@
-import askQuestion from "./question-answer.js";
-import primeNumberGenerator from "./prime-number-generator.js";
+import askQuestion from './question-answer.js';
+import primeNumberGenerator from './prime-number-generator.js';
 
 export default (name) => {
   let result = false; // результат ответа
@@ -13,10 +13,10 @@ export default (name) => {
     if (chanceToBePrime <= 40) {
       // шанс, что вопрос будет с простым числом устанавливается правым компонентом условия
       question = primeNumberGenerator(true);
-      result = askQuestion(question, "yes");
+      result = askQuestion(question, 'yes');
     } else {
       question = primeNumberGenerator(false);
-      result = askQuestion(question, "no");
+      result = askQuestion(question, 'no');
     }
     if (result !== true) {
       isBreaked = true;

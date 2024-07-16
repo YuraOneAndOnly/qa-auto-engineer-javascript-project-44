@@ -1,4 +1,4 @@
-import askQuestion from "./question-answer.js";
+import askQuestion from './question-answer.js';
 
 export default (name) => {
   let questionNumber = 0; // число для вопроса
@@ -11,9 +11,9 @@ export default (name) => {
   for (let i = 1; i <= 3; i += 1) {
     questionNumber = Math.floor(Math.random() * maxNumber);
     if (questionNumber % 2 === 0) {
-      expectedAnswer = "yes";
+      expectedAnswer = 'yes';
     } else {
-      expectedAnswer = "no";
+      expectedAnswer = 'no';
     }
     result = askQuestion(questionNumber, expectedAnswer);
     if (result !== true) {

@@ -2,7 +2,8 @@ export default (isPrimeNeeded) => {
   // если нужно простое число - передавать в функцию true
   const maxNumber = 1000; // максимальное возможное число
   if (isPrimeNeeded === true) {
-    let rightNumber = Math.ceil(Math.random() * (maxNumber - 1)) + 1; // сдвиг рандома на +2 вправо, чтобы не попадали 0 и 1
+    let rightNumber = Math.ceil(Math.random() * (maxNumber - 1)) + 1;
+    // сдвиг рандома на +2 вправо, чтобы не попадали 0 и 1
     if (rightNumber === 2) {
       return 2;
     } // возвращаем сразу простое 2 для упрощения алгоритма

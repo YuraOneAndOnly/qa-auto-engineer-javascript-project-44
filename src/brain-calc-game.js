@@ -1,16 +1,16 @@
-import askQuestion from "./question-answer.js";
+import askQuestion from './question-answer.js';
 
 export default (name) => {
   let questionType = 0; // тип вопроса (0(+), 1(-), 2(*))
   let questionFirstNumber = 0; // первое число в вопросе
   let questionSecondNumber = 0; // второе число в вопросе
   let expectedAnswer = 0; // ожидаемый ответ
-  let question = ""; // формируемая строка вопроса
+  let question = ''; // формируемая строка вопроса
   let result = false; // результат ответа
   let isBreaked = false; // условие завершения цикла
   const maxNumber = 1000; // максимальное возможное значение чисел в вопросе
 
-  console.log("What is the result of the expression?");
+  console.log('What is the result of the expression?');
   for (let i = 1; i <= 3; i += 1) {
     questionType = Math.floor(Math.random() * 3); // генерация случайного числа от 0 до 2
     questionFirstNumber = Math.floor(Math.random() * maxNumber);
