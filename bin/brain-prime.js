@@ -3,5 +3,4 @@
 import askForName from '../src/cli.js';
 import brainPrime from '../src/brain-prime-game.js';
 
-const name = askForName();
-brainPrime(name);
+brainPrime(askForName());
