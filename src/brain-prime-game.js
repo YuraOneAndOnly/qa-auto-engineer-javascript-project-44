@@ -1,9 +1,10 @@
 import askQuestion from './question-answer.js';
 import primeNumberGenerator from './prime-number-generator.js';
+import resultOfGame from './result-of-game.js';
 
 export default (name) => {
   let result = false; // результат ответа
-  let isBreaked = false; // условие завершения цикла
+  let finalResult = true; // условие завершения цикла
   let question = 1; // число для вопроса
   const maxNumber = 100; // максимальное возможное значение чисел в вопросе
 
@@ -19,13 +20,9 @@ export default (name) => {
       result = askQuestion(question, 'no');
     }
     if (result !== true) {
-      isBreaked = true;
+      finalResult = false;
       break;
     }
   }
-  if (isBreaked) {
-    console.log(`Let's try again, ${name}!`);
-  } else {
-    console.log(`Congratulations, ${name}!`);
-  }
+  resultOfGame(name, finalResult);
 };

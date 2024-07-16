@@ -1,4 +1,5 @@
 import askQuestion from './question-answer.js';
+import resultOfGame from './result-of-game.js';
 
 export default (name) => {
   let questionType = 0; // тип вопроса (0(+), 1(-), 2(*))
@@ -7,7 +8,7 @@ export default (name) => {
   let expectedAnswer = 0; // ожидаемый ответ
   let question = ''; // формируемая строка вопроса
   let result = false; // результат ответа
-  let isBreaked = false; // условие завершения цикла
+  let finalResult = true; // условие завершения цикла
   const maxNumber = 1000; // максимальное возможное значение чисел в вопросе
 
   console.log('What is the result of the expression?');
@@ -38,13 +39,9 @@ export default (name) => {
     }
     result = askQuestion(question, expectedAnswer);
     if (result !== true) {
-      isBreaked = true;
+      finalResult = false;
       break;
     }
   }
-  if (isBreaked) {
-    console.log(`Let's try again, ${name}!`);
-  } else {
-    console.log(`Congratulations, ${name}!`);
-  }
+  resultOfGame(name, finalResult);
 };
