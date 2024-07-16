@@ -10,3 +10,5 @@ Link to "brain-calc" (step 6) asciinema: https://asciinema.org/a/3ARMdDSVraqaL5h
 Link to "brain-gcd" (step 7) asciinema: https://asciinema.org/a/iNyBjayoO5llDDh24BNOO6IUq
 
 Link to "brain-progression" (step 8) asciinema: https://asciinema.org/a/MY4JhmSn1PBX43Gzy6sN7mbWF
+
+Link to "brain-prime" (step 9) asciinema: https://asciinema.org/a/zV0ujpHwrIUZgBxvOeMDX9WJI
